@@ -24,6 +24,8 @@
   {%- endblock -%}
 
   {#- CSS #}
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   {%- if sphinx_version_info < (4, 0) -%}
     <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
@@ -63,6 +65,7 @@
   {%- endif -%}
 
   {#- JAVASCRIPTS #}
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   {%- block scripts %}
   <!--[if lt IE 9]>
     <script src="{{ pathto('_static/js/html5shiv.min.js', 1) }}"></script>
@@ -172,6 +175,16 @@
                 aria-label={`${this.state.stars} stargazers on GitHub`}
               >
               </a>
+
+              <a
+                class="gh-btn"
+                href="https://cilium.herokuapp.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <span class="iconify" data-icon="logos:slack-icon"></span>
+                <span class="gh-text">Join Slack</span>
+            </a>
             </span>
         </span>
     </div>
@@ -180,13 +193,30 @@
       <input name="wy-main-nav-checkbox" id="wy-main-nav-checkbox" class="wy-main-nav-checkbox" type="checkbox">
       <label for="wy-main-nav-checkbox" class="wy-main-nav-toggle">Menu</label>
       <ul id="#wy-main-nav-menu" class="wy-main-nav-menu">
+        <li><a href="https://cilium.io/enterprise/">Enterprise</a></li>
         <li>
-          <a href="https://isovalent.com" class="callToAction">
-            <span>Enterprise</span>
-          </a>
+          <div style="background-color: white; font-size: 16px; font-weight: 600; margin-left: 40px" class="w3-dropdown-hover">
+            <button class="w3-button">Learn<i class="fa fa-angle-down"></i></button>
+            <div style="margin-left: -15px" class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="https://cilium.io/get-started" class="w3-bar-item w3-button">Get Started</a>
+              <a href="https://cilium.io/get-involved" class="w3-bar-item w3-button">Get Involved</a>
+              <a href="https://cilium.io/get-help" class="w3-bar-item w3-button">Get Help</a>
+            </div>
+          </div>
+        
         </li>
-        <li><a href="https://cilium.io">Cilium</a></li>
-        <li><a href="https://cilium.io/blog">Blog</a></li>
+        <li>
+          <div style="background-color: white; font-size: 16px;font-weight: 600; margin-left: 40px" class="w3-dropdown-hover">
+            <button class="w3-button">News and media<i class="fa fa-angle-down"></i></button>
+            <div style="margin-left: -15px" class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="https://cilium.io/adopters" class="w3-bar-item w3-button">Adopters</a>
+              <a href="https://cilium.io/blog" class="w3-bar-item w3-button">Blog</a>
+              <a href="https://github.com/cncf/artwork/blob/master/examples/incubating.md#cilium-logos" class="w3-bar-item w3-button">Branding</a>
+              <a href="https://cilium.io/newsletter" class="w3-bar-item w3-button">Newsletter</a>
+            </div>
+          </div>
+
+        </li>
         <li><a href="https://docs.cilium.io">Documentation</a></li>
       </ul>
     </nav>
