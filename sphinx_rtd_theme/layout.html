@@ -25,7 +25,6 @@
 
   {#- CSS #}
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   {%- if sphinx_version_info < (4, 0) -%}
     <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
     <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
@@ -196,7 +195,7 @@
         <li><a href="https://cilium.io/enterprise/">Enterprise</a></li>
         <li>
           <div style="background-color: white; font-size: 16px; font-weight: 600; margin-left: 40px" class="w3-dropdown-hover">
-            <button class="w3-button">Learn<i class="fa fa-angle-down"></i></button>
+            <button class="w3-button">Learn <span class="triangle">▾</span></button>
             <div style="margin-left: -15px" class="w3-dropdown-content w3-bar-block w3-card-4">
               <a href="https://cilium.io/get-started" class="w3-bar-item w3-button">Get Started</a>
               <a href="https://cilium.io/get-involved" class="w3-bar-item w3-button">Get Involved</a>
@@ -207,7 +206,7 @@
         </li>
         <li>
           <div style="background-color: white; font-size: 16px;font-weight: 600; margin-left: 40px" class="w3-dropdown-hover">
-            <button class="w3-button">News and media<i class="fa fa-angle-down"></i></button>
+            <button class="w3-button">News and media <span class="triangle">▾</span></i></button>
             <div style="margin-left: -15px" class="w3-dropdown-content w3-bar-block w3-card-4">
               <a href="https://cilium.io/adopters" class="w3-bar-item w3-button">Adopters</a>
               <a href="https://cilium.io/blog" class="w3-bar-item w3-button">Blog</a>
