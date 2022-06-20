@@ -64,7 +64,6 @@
   {%- endif -%}
 
   {#- JAVASCRIPTS #}
-  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   {%- block scripts %}
   <!--[if lt IE 9]>
     <script src="{{ pathto('_static/js/html5shiv.min.js', 1) }}"></script>
@@ -164,7 +163,7 @@
                 target="_blank"
               >
                 <span class="gh-ico" aria-hidden="true"></span>
-                <span class="gh-text">Star</span>
+                <span class="gh-text">GitHub Stars</span>
               </a>
               <a
                 class="gh-count"
@@ -172,6 +171,7 @@
                 rel="noopener noreferrer"
                 target="_blank"
                 aria-label={`${this.state.stars} stargazers on GitHub`}
+                style="margin-left: 0px;"
               >
               </a>
 
@@ -180,8 +180,9 @@
                 href="https://cilium.herokuapp.com/"
                 rel="noopener noreferrer"
                 target="_blank"
+                style="margin-left: 15px;"
               >
-                <span class="iconify" data-icon="logos:slack-icon"></span>
+                <img style="height: 1em;" src="https://raw.githubusercontent.com/cilium/cilium.io/main/src/icons/slack.inline.svg" alt="slack_icon">
                 <span class="gh-text">Join Slack</span>
             </a>
             </span>
